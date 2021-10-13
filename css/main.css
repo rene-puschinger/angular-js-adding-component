@@ -1,0 +1,109 @@
+.content {
+    margin: 30px 0 40px 0;
+}
+
+/* Vertical Addition Component */
+
+table.addition-exercise {
+    border-collapse:collapse;
+    border-spacing: 0;
+    margin: 10px 0 10px 0;
+}
+
+table.addition-exercise .line {
+    font-family: 'Droid Sans Mono', monospace;
+    text-align: center;
+}
+
+table.addition-exercise .line-carry {
+    font-size: 36px;
+    line-height: 36px;
+    color: #808080;
+}
+
+table.addition-exercise .line-number {
+    font-size: 52px;
+    line-height: 52px;
+    color: #000;
+}
+
+table.addition-exercise .line-result {
+    font-size: 52px;
+    line-height: 52px;
+    color: #006dcc;
+}
+
+table.addition-exercise .btn-success {
+    margin-left: 60px;
+    width: 180px;
+}
+
+table.addition-exercise .line-separator {
+    border-bottom: 2px solid #000;
+}
+
+table.addition-exercise .no-separator {
+    border-bottom: 2px solid #fff;
+}
+
+/* the following snippet is for CSS3 shake effect. It may be later placed to a more general CSS file in order to reuse it */
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@-moz-keyframes spaceboots {
+   0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+   10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+   30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+   40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+   50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+   70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+   80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+   90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+   100% { -moz-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes spaceboots {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+                               
+.shake {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.4s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spaceboots;
+    -moz-animation-duration: 0.4s;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: spaceboots;
+    animation-duration: 0.4s;
+    transform-origin:50% 50%;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;   
+}
+
